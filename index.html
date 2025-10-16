@@ -5,20 +5,88 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ferny3 Ministries</title>
   <style>
-    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
-    .wrap{min-height:100vh;display:grid;place-items:center;padding:4rem 1rem;text-align:center}
-    h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 .5rem}
-    p{max-width:60ch;margin:.25rem auto 0;opacity:.8}
-    a.btn{display:inline-block;margin-top:1.25rem;padding:.7rem 1rem;border:1px solid #999;border-radius:10px;text-decoration:none}
+    :root {
+      --gold: #d4af37;
+      --blue: #1e3a8a;
+      --light: #f5f6fa;
+      --dark: #111827;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Inter, system-ui, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    img.logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: .5rem;
+      color: var(--blue);
+      letter-spacing: 0.5px;
+    }
+    p.tagline {
+      margin: 0 auto 1.5rem;
+      max-width: 60ch;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .links a {
+      text-decoration: none;
+      background: var(--blue);
+      color: white;
+      padding: 0.7rem 1.1rem;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: all 0.25s ease;
+    }
+    .links a:hover {
+      background: var(--gold);
+      color: var(--dark);
+      transform: translateY(-3px);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <main>
-      <h1>Ferny3 Ministries</h1>
-      <p>Site is live on GitHub Pages. More content coming.</p>
-      <a class="btn" href="https://instagram.com" target="_blank" rel="noopener">Follow on Instagram</a>
-    </main>
+  <!-- If your logo file is named logo.png, upload it to the repo root -->
+  <img class="logo" src="logo.png" alt="Ferny3 Ministries Logo" />
+
+  <h1>Ferny3 Ministries</h1>
+  <p class="tagline">
+    Spreading the Word through music, teaching, and truth.  
+    “The Holy Spirit is the Majority — and the Majority is the Holy Spirit.”
+  </p>
+
+  <div class="links">
+    <a href="https://youtube.com/@ferny3ministries?si=iwX-COVIc-buHsvl" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.tiktok.com/@ferny3ministries?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.instagram.com/ferny3ministries/" target="_blank" rel="noopener">Instagram</a>
   </div>
+
+  <footer>
+    © 2025 Ferny3 Ministries. All rights reserved.
+  </footer>
 </body>
 </html>
